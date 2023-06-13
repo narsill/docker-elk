@@ -1,7 +1,4 @@
 # docker-elk
-docker-elk
-установим docker
-
 
 репозитории:
 * [Elasticsearch](https://github.com/elastic/elasticsearch/tree/main/distribution/docker)
@@ -19,15 +16,15 @@ docker-elk
 
 [Начало работы]
 
-> В терминале запускаем.
+ В терминале запускаем.
 
-git clone https://github.com/narsill/docker-elk.git
+> git clone https://github.com/narsill/docker-elk.git
 
 скорее всего придется запускать от суперпользователя:
 
-docker compose up setup
+> docker compose up setup
 
-docker compose up -d (-d запускает контейнеры в фоновом режиме)
+> docker compose up -d (-d запускает контейнеры в фоновом режиме)
 
 ###
 Запустите веб-интерфейс Kibana, открыв http://localhost:5601 в веб-браузере, и используйте следующие учетные данные для входа:
@@ -41,7 +38,7 @@ docker compose up -d (-d запускает контейнеры в фоново
 Данные Elasticsearch по умолчанию сохраняются внутри тома.
 Чтобы полностью отключить стек и удалить все сохраненные данные, используйте следующую команду Docker Compose:
 
-docker-compose down -v
+> docker-compose down -v
 
 Как отключить платные функции.
 Измените значение xpack.license.self_generated.typeпараметра Elasticsearch с trialна basic(см. Настройки лицензии ).
@@ -52,5 +49,5 @@ docker-compose down -v
 
 setup службу Compose:
 
-docker compose build 
+> docker compose build 
 
