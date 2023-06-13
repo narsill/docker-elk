@@ -55,15 +55,26 @@ setup службу Compose:
 
 filebeat это агент который ставится на удаленные машины для передачи логов и другой информации на ЕLK.
 установка filebeat:
+
 > dpkg -i <название>.deb
+
 после установки редактируем конф. файл /etc/filebeat/filebeat.yml
+
 > filebeat setup 
+
 раскомменируем строку output logstash и указав ip адрес на котором развернут ELK
+
 так же требуется включить модули
+
 список доступных модулей 
+
 > filebeat modules list
+
 включить нужный модуль 
+
 > filebeat modules <название> enable
+
 после всего можно перезапустить filebeat
+
 > systemctl restart filebeat
 
