@@ -18,7 +18,7 @@ docker-elk
 * 5601: Kibana
 
 Начало работы.
-в терминале запускаем:
+В терминале запускаем.
 git clone https://github.com/narsill/docker-elk.git
 скорее всего придется запускать от суперпользователя:
 docker compose up setup
